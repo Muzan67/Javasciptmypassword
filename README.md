@@ -1,48 +1,21 @@
-# 03 JavaScript: Password Generator
+# 03 JavaScript: Password Generator - Description
 
-Create an application that generates a random password based on user-selected criteria. The app runs in the browser and features dynamically updated HTML and CSS powered by your JavaScript code. It has a clean and polished user interface and is responsive, which ensures that it adapts to multiple screen sizes.
+I created an application that generates a random password based on the criteria that the user selects. 
+The Password Generator creates cn range from many characters and multiple posibilities. 
 
-If you are unfamiliar with special characters, take a look at some [examples of special characters on the OWASP Foundation website](https://www.owasp.org/index.php/Password_special_characters).
+# Instalation
 
-## User Story
+I created a Variable for each function, and stored the data for each Variable that was declared so the password generator could return the final password.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+I created prompts for the user to create their unique passwords to their liking and specifics. 
 
-## Acceptance Criteria
+I used the If statement for if the condition was true to push to the password generator to create the password. 
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+# Credit
+https://www.w3schools.com/ - I used the website for reference which helped me choose the correct array for my functions. 
 
-The following image demonstrates the application functionality:
+https://developer.chrome.com/docs/devtools/open/ - I used the Console tab in Google Chrome Developer Tools to troubleshoot and correct my code as I was on working on. 
 
-![An app window with the label Password Generator, an input field labeled Your Secure Password, and a Generate Password button.](./Assets/03-javascript-homework-demo.png)
+https://codepen.io/Haagimus/pen/dPrewE - I used the codepen website to configure and run the var function from line 18 - line 29.
 
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+https://stackoverflow.com/questions - I used StackOverflow to see the approach and opinions of the community of people and see how I can apply their knowledge to my work. 
