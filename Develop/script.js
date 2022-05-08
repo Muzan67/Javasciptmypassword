@@ -35,8 +35,10 @@ var hasUppercase = confirm("Do you want a uppercase letter");
 // use a forloop to loop through final array based of the length the user requested for 
 for (let i = 0; i < lengthOfPassword; i++){
 // use a MAth.random function to get a random character from the array and store it into a password string
-return password
+finalArr.push(Math.random()* lengthOfPassword, hasLowercase, hasUppercase, hasNumber, hasSymbol);
 }
+return finalArr
+
 
 console.log(`length=${lengthOfPassword}  lower = ${hasLowercase}, upper = ${hasUppercase}  number = ${hasNumber}  symbol = ${hasSymbol}`);   
 }   
