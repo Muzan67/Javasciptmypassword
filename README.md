@@ -1,21 +1,22 @@
-# 03 JavaScript: Password Generator - Description
+## JavaScript: Password Generator - Description
 
-I created an application that generates a random password based on the criteria that the user selects. 
-The Password Generator creates cn range from many characters and multiple posibilities. 
+I created an application that generates a random password based on the criteria that the user selects.
+The app runs in the browser and features dynamically updated HTML and CSS powered by your JavaScript code.
+It has a clean and polished user interface and is responsive, which ensures that it adapts to multiple screen sizes.
+The Password Generator creates multiple possibilities of charaacters and unique specififcations to the users criteria.
 
-# Instalation
+## Screenshots of My Password Generator
 
-I created a Variable for each function, and stored the data for each Variable that was declared so the password generator could return the final password.
+![Untitled3](https://user-images.githubusercontent.com/102841726/182007885-d21e25ab-88c6-4d79-a0dc-84ac30c0f8cb.png)
 
-I created prompts for the user to create their unique passwords to their liking and specifics. 
+## Technologies Used
 
-I used the If statement for if the condition was true to push to the password generator to create the password. 
+- HTML
+- CSS
+- Javascript
 
-# Credit
-https://www.w3schools.com/ - I used the website for reference which helped me choose the correct array for my functions. 
+## Credit
 
-https://developer.chrome.com/docs/devtools/open/ - I used the Console tab in Google Chrome Developer Tools to troubleshoot and correct my code as I was on working on. 
+https://www.w3schools.com/ - I used the website for reference which helped me choose the correct array for my functions.
 
-https://codepen.io/Haagimus/pen/dPrewE - I used the codepen website to configure and run the var function from line 18 - line 29.
-
-https://stackoverflow.com/questions - I used StackOverflow to see the approach and opinions of the community of people and see how I can apply their knowledge to my work. 
+https://developer.chrome.com/docs/devtools/open/ - I used the Console tab in Google Chrome Developer Tools to troubleshoot and correct my code as I was on working on.

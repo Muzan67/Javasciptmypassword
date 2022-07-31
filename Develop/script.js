@@ -1,62 +1,84 @@
+// Character options to create unique password
+var numbers = "0123456789";
+var lowercase = "abcdefghijklmnopqrstuvwxyz";
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var symbol = "+-*/=!@#$%^&()";
+var storePassword = "generate password";
+var passwordLength = 0;
+var password = "";
+var allCharacters = "";
+
+// create password
+var createPassword = function () {
+  // resets characters, password and length
+  allCharacters = "";
+  password = "";
+  passLength = 0;
+
+  // unique code has 8 -128 characters
+  while (passwordLength < 8 || passwordLength > 128) {
+    passwordLength = window.prompt(
+      "Choose a number between 8-128 for length of characters for your password"
+    );
+  }
+
+  //get Users input to generate Password
+  var numbersConfirm = window.confirm(
+    "Do you want a numbers for your password? Click OK if yes"
+  );
+  // if user says yes we are going to push the data of the number array into the finalArr
+  //if user chooses NO do nothing
+  var symbolConfirm = window.confirm(
+    "Do you want a special character for your password? Click OK if yes"
+  );
+  // if user says yes we are going to push the data of the symbol array into the finalArr
+  //if user chooses NO do nothing
+  var lowercaseConfirm = window.confirm(
+    "Do you want a lowercase letter for your password? Click OK if yes"
+  );
+  // if user says yes we are going to push the data of the lowercase array into the finalArr
+  //if user chooses NO do nothing
+  var uppercaseConfirm = window.confirm("Do you want a uppercase letter");
+  // if user says yes we are going to push the data of the uppercase array into the finalArr
+  //if user chooses NO do nothing
+
+  // confirmation of the character types the user wishes to see in their password
+  if (numbersConfirm) {
+    allCharacters += numbers;
+  }
+  if (symbolConfirm) {
+    allCharacters += symbol;
+  }
+  if (lowercaseConfirm) {
+    allCharacters += lowercase;
+  }
+  if (uppercaseConfirm) {
+    allCharacters += uppercase;
+  }
+
+  console.log(allCharacters);
+};
+
+// use a forloop to loop through final array based off the options the users input
+function generatePassword() {
+  createPassword();
+  for (let i = 1; i <= passwordLength; i++) {
+    let randomNumber = Math.floor(Math.random() * allCharacters.length);
+    password += allCharacters[randomNumber];
+  }
+  return password;
+}
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
-
-// We need to store the data that we need for the program
-var numbers = '0123456789'
-var lowercase = 'abcdefghijklmnopqrstuvwxyz'
-var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-var symbol = "!@#$%^&*()"
-var finalArr = []
-var password = ''
-// console.log(numbers, lowercase, uppercase, symbol,)
-
-function generatePassword () {
-//get Users input
-//
-var lengthOfPassword = prompt("Choose length of 8-128 characters"); 
-
-var hasNumber = confirm("Do you want a number");
-// if user says yes we are going to push the data of the number array into the finalArr
-//if they say no do nothing 
-var hasSymbol = confirm("Do you want a special character"); 
-// if user says yes we are going to push the data of the number array into the finalArr
-//if they say no do nothing 
-var hasLowercase = confirm("Do you want a lowercase letter"); 
-// if user says yes we are going to push the data of the number array into the finalArr
-//if they say no do nothing 
-var hasUppercase = confirm("Do you want a uppercase letter");
-// if user says yes we are going to push the data of the number array into the finalArr
-//if they say no do nothing 
-
-var arrOfSelection = []
-
-if(hasNumber) arrOfSelection.push(numbers)
-if(hasSymbol) arrOfSelection.push(symbol)
-if(hasLowercase) arrOfSelection.push(lowercase)
-if(hasUppercase) arrOfSelection.push(uppercase)
-
-console.log(arrOfSelection);
-
-// use a forloop to loop through final array based of the length the user requested for
-for (let i = 0; i < lengthOfPassword; i++) { // use a MAth.random function to get a random character from the array and store it into a password string
-var randCharSet = arrOfSelection[Math.floor(Math.random() * arrOfSelection.length)]
-  password += randCharSet.split('')[Math.floor(Math.random() * randCharSet.length)]
-  console.log(password);
-}
-   
-return password
-}
-
-// Add event listener to generate button
+// Write Password to password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
+// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
