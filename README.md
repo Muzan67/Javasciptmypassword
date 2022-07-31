@@ -5,7 +5,7 @@ The app runs in the browser and features dynamically updated HTML and CSS powere
 The Password Generator App has a clean and polished user interface and is responsive, which ensures that it adapts to multiple screen sizes.
 The Password Generator creates multiple possibilities of characters and unique specififcations to the users criteria.
 
-## Screenshots of My Password Generator
+## Screenshot of My Password Generator
 
 ![Untitled3](https://user-images.githubusercontent.com/102841726/182007885-d21e25ab-88c6-4d79-a0dc-84ac30c0f8cb.png)
 
