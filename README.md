@@ -15,6 +15,10 @@ The Password Generator creates multiple possibilities of characters and unique s
 - CSS
 - Javascript
 
+## Javascript my Password - Github Repository
+
+https://github.com/Muzan67/Javasciptmypassword
+
 ## Credit
 
 https://www.w3schools.com/ - I used the website for reference which helped me choose the correct array for my functions.
