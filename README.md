@@ -76,4 +76,4 @@ To install this application, clone the code into your terminal for the respectiv
 
 # Screenshot of My Password Generator
 
-![Untitled3](https://user-images.githubusercontent.com/102841726/182007885-d21e25ab-88c6-4d79-a0dc-84ac30c0f8cb.png)
+![182007885-d21e25ab-88c6-4d79-a0dc-84ac30c0f8cb](https://user-images.githubusercontent.com/102841726/187491872-0418d070-491a-4e2d-b6ef-9ce5a6823fa0.png)
